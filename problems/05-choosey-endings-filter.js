@@ -9,11 +9,6 @@ a strings ends a certain way. Go see if you can find it on MDN!
 
 Examples:
 
-console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'nd'));
-// [ 'hound', 'bond' ]
-
-console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'icity'));
-// [ 'simplicity', 'felicity' ]
 
 console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'ily'));
 // [ ]
@@ -35,6 +30,11 @@ let chooseyEndings = function(words, suffix) {
 console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'ly'));
 // [ 'family', 'fly', 'timidly' ]
 
+console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'nd'));
+// [ 'hound', 'bond' ]
+
+console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'icity'));
+// [ 'simplicity', 'felicity' ]
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
